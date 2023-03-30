@@ -21,6 +21,7 @@ body {
 
         -webkit-animation-direction: alternate;
         animation-direction: alternate;
+
 }
 
 @-webkit-keyframes slidein {
@@ -50,7 +51,7 @@ to {background-position: -100px 0px;background-size:2750px;}
   left: 0;
   background: rgba(75, 75, 250, 0.3);
   border-radius: 3px;  
-  z-index: -10;
+  z-index: -1;
 }
 .center h1{
   text-align:center;
@@ -83,7 +84,14 @@ to {background-position: -100px 0px;background-size:2750px;}
     height: 15vh;
     min-height: 50px;
 }
+.zoom{
 
+    transition: all 400ms;
+}
+.zoom:hover{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
 .lista{
    display:flex;
 }
@@ -93,6 +101,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 main{
     text-align: center;
+
 }
 
 main p{padding: 5px 25px;}

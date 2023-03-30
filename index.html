@@ -8,20 +8,22 @@
     <title>Document</title>
 </head>
 <body>
+
     <header class="header">
 
         <div class="contenedor-nav">
             
             <nav>
-                <ul class="contenedor" class="perfil">
-                    <li><a onclick="ocultar(`mi`)" href="#mi">Sobre mi </a></li>
-                    <li><a onclick="ocultar(`experiencia`)" href="#experiencia">Experiencia</a></li>
-                    <li><a onclick="ocultar(`estudios`)" href="#estudios">Estudios</a></li>
-                    <li><a onclick="ocultar(`contacto`)" href="#contacto">Contacto</a></li>
+                <ul class="contenedor perfil">
+                    <li><a onclick="ocultar(`mi`)" href="#mi" class="zoom">Sobre mi </a></li>
+                    <li><a onclick="ocultar(`experiencia`)" href="#experiencia" class="zoom">Experiencia</a></li>
+                    <li><a onclick="ocultar(`estudios`)" href="#estudios" class="zoom">Estudios</a></li>
+                    <li><a onclick="ocultar(`contacto`)" href="#contacto" class="zoom">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main class="center">
 
         <img src="./img/perfil-blanco.jpg" height="200px" width="200px" alt="FOTO DE PERFIL DEL CURRICULUM"  class="foto-perfil"id="foto-perfil">
@@ -33,18 +35,22 @@
                 <li><a href="https://github.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" height="30px" alt="Icon git"></a></li>
             </ul>
         </div>
+
         <H1>Curriculum</H1>
+
         <section id="mi">
             <h2>Datos personales</h2>
-            <p>Hola! Mi nombre es <span id="nombre"></span> y este es mi curriculum</p>
-        </section><br>
+            <p>Hola! Mi nombre es <span id="nombre"></span>, tengo <span id="age"></span> años y este es mi curriculum</p>
+        </section>
+
         <section id="experiencia">
             <h2>Mi Experiencia laboral</h2>
             <p>Desde Diciembre 2020. Actualmente en el puesto en Lorem ipsum</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt officia explicabo, possimus mollitia est, distinctio quos sunt modi incidunt et? At cumque et, necessitatibus nostrum ea enim. Explicabo, dolorem?</p>
             <p>Desde Marzo 2016 hasta Enero 2021 en Lorem ipsum alternative</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga molestiae iure nesciunt. Illum dignissimos asperiores recusandae sint, iusto aliquid id assumenda reprehenderit culpa nemo quibusdam architecto beatae cumque. Libero!</p>
-        </section><br>
+        </section>
+
         <section id="estudios">
             <h2>Mis estudios</h2>
             <h3>Certificado universitario</h3>
@@ -53,14 +59,15 @@
             <h3>Certificado Secundario</h3>
             <p>Secundario completo. Escuela Nacional N°3</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur est qui quisquam sapiente dignissimos rerum laboriosam quaerat molestiae quasi accusamus esse, voluptatibus temporibus suscipit minima facere vitae quam, nemo atque?</p>
-        </section><br>
+        </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Email: <span id="correo"></span></p>
             <p>Teléfono: <span id="tel"></span></p>
             <p>Dirección: <span id="dire"></span></p>
             <p>Ciudad: <span id="ciudad"></span></p>
-        </section><br>
+        </section>
 
     </main>
     

@@ -3,6 +3,7 @@ var usuario
 var foto = document.getElementById("foto-perfil");
 var nombre = document.getElementById("nombre")
 var apellido = document.getElementById("apellido")
+var age = document.getElementById("age")
 var email = document.getElementById("correo")
 var telefono = document.getElementById("tel")
 var direccion = document.getElementById("dire")
@@ -75,6 +76,7 @@ const generarUsuario = async ()=>{
     telefono.innerText = usuario.cell;
     direccion.innerHTML = usuario.location.street.name +" "+ usuario.location.street.number;
     ciudad.innerText = usuario.location.state;
+    age.innerText = usuario.dob.age;
     //fin de carga de datos de contacto
 
 
