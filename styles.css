@@ -68,6 +68,12 @@ to {background-position: -100px 0px;background-size:2750px;}
     align-items: center;
     justify-content: space-evenly;
     margin: 20px;
+    
+}
+
+.contenedor a {
+    color: black;
+   
 }
 .contenedor-nav{
    /* display: flex;
