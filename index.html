@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="" alt="Foto de perfíl">
+    <header class="header">
+
+        <div class="contenedor-nav">
+            
+            <nav>
+                <ul class="contenedor" class="perfil">
+                    <li><a onclick="ocultar(`mi`)" href="#mi">Sobre mi </a></li>
+                    <li><a onclick="ocultar(`experiencia`)" href="#experiencia">Experiencia</a></li>
+                    <li><a onclick="ocultar(`estudios`)" href="#estudios">Estudios</a></li>
+                    <li><a onclick="ocultar(`contacto`)" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <div>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>            
+    </header>
+    <main class="center">
+
+        <img src="./img/perfil-blanco.jpg" height="200px" width="200px" alt="FOTO DE PERFIL DEL CURRICULUM"  class="foto-perfil"id="foto-perfil">
+
+        <div class="contenedor">
+            <ul class="lista">
+                <li><a href="https://www.gmail.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" height="30px" alt="Icon mail"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" height="30px" alt="Icon facebook"></a></li>
+                <li><a href="https://github.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" height="30px" alt="Icon git"></a></li>
             </ul>
         </div>
+        <H1>Curriculum</H1>
+        <section id="mi">
+            <h2>Datos personales</h2>
+            <p>Hola! Mi nombre es <span id="nombre"></span> y este es mi curriculum</p>
+        </section><br>
+        <section id="experiencia">
+            <h2>Mi Experiencia laboral</h2>
+            <p>Desde Diciembre 2020. Actualmente en el puesto en Lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt officia explicabo, possimus mollitia est, distinctio quos sunt modi incidunt et? At cumque et, necessitatibus nostrum ea enim. Explicabo, dolorem?</p>
+            <p>Desde Marzo 2016 hasta Enero 2021 en Lorem ipsum alternative</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga molestiae iure nesciunt. Illum dignissimos asperiores recusandae sint, iusto aliquid id assumenda reprehenderit culpa nemo quibusdam architecto beatae cumque. Libero!</p>
+        </section><br>
+        <section id="estudios">
+            <h2>Mis estudios</h2>
+            <h3>Certificado universitario</h3>
+            <p>Universitario completo. Universidad Nacional de Tucumán</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi consequuntur asperiores illum voluptatem delectus minus fugiat excepturi saepe, quos recusandae accusantium, suscipit architecto, tempore repellat voluptatum! Incidunt, tenetur non.</p>
+            <h3>Certificado Secundario</h3>
+            <p>Secundario completo. Escuela Nacional N°3</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur est qui quisquam sapiente dignissimos rerum laboriosam quaerat molestiae quasi accusamus esse, voluptatibus temporibus suscipit minima facere vitae quam, nemo atque?</p>
+        </section><br>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: <span id="correo"></span></p>
+            <p>Teléfono: <span id="tel"></span></p>
+            <p>Dirección: <span id="dire"></span></p>
+            <p>Ciudad: <span id="ciudad"></span></p>
+        </section><br>
 
-    </header>
+    </main>
+    
+    <script src="./app.js"></script>
 </body>
 </html>
